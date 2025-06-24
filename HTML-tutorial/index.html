@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="これはChocoZAPのLPを作るチュートリアルです">
+    <title>ChocoZAP-LP-Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="logo" />
+        <nav>
+            <ul>
+                <li><a href="#">店舗検索</a></li>
+                <li><a href="#">サービス</a></li>
+                <li><a href="#">料金</a></li>
+                <li><a href="#">お知らせ</a></li>
+                <li>
+                    <p><select name="info" size="1">
+                            <option>お役立ち情報</option>
+                            <option>運動はじめてガイド</option>
+                            <option>体験者の声</option>
+                            <option>健康コラム</option>
+                        </select></p>
+                </li>
+                <li>
+                    <p><select name="question" size="1">
+                            <option>よくあるご質問</option>
+                            <option>ご入会を検討中の皆様へ</option>
+                            <option>ご入会をいただいた皆様へ</option>
+                        </select></p>
+                </li>
+                <li><a href="#">入会</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="exapmle.php" method="post" name="search">
+            <input type="text" placeholder="駅名・店名で探す" />
+        </form>
+        <button>お近くの店舗</button>
+        <img src="/images/main.png" alt="main" />
+        <h1>
+            <span>ずーっと</span>
+            月額2980円[税込3,278円]
+        </h1>
+        <img src="/images/explanation.png" alt="exapmle" />
+        <form action="exapmle.php" method="post" name="taikan">
+            <input type="image" src="/images/taikan.png" alt="taikan" />
+        </form>
+        <button>入会はこちら</button>
+        <button>入会方法について</button>
+        <form action="exapmle.php" method="post" name="taikan">
+            <input type="image" src="/images/newstore.png" alt="newstore" />
+        </form>
+        <form action="exapmle.php" method="post" name="taikan">
+            <input type="image" src="/images/guide.png" alt="guide" />
+        </form>
+        <section>
+            <table>
+                <tr>
+                    <td>
+                        <p>2025年6月24日(火)</p>
+                    </td>
+                    <td>
+                        <p>【重要】Wi-Fi接続方法を従来方式に戻しました</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>2025年6月24日(火)</p>
+                    </td>
+                    <td>
+                        <p>【障害発生/解消済】モトローラ社製スマートフォンでchocoZAPアプリが強制終了する事象について</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>2025年6月21日(土)</p>
+                    </td>
+                    <td>
+                        <p>新サービス「ちょこっとパーソナル」開始のお知らせ（一部店舗）</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>2025年6月20日(金)</p>
+                    </td>
+                    <td>
+                        <p>【障害発生】iPhone iOS16における一部画面の表示不具合について</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>2025年6月19日(木)</p>
+                    </td>
+                    <td>
+                        <p>【Mini人間ドック（MRI・CT・エコー検査）】2025年7月31日までのご予約を受付開始（新宿の提携医療機関にて） いたしました。</p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h1>店舗検索</h1>
+            <form action="exapmle.php" method="post" name="tenpo">
+                <input type="text" placeholder="駅名・店名で探す" />
+            </form>
+            <button>エリアから探す</button>
+            <button>お近くの店舗を探す</button>
+        </section>
+    </main>
+</body>
+
+</html>
