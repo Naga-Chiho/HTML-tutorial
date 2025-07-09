@@ -244,19 +244,37 @@ input {
     padding-bottom: 8px;
 }
 
-.price ,.price_lineOff .month {
+.price .month {
     color: #122939;
     font-size: 24px;
     margin: 0;
 }
 
-.price , .price_lineOff .offtax {
+.price_lineOff .month {
+    color: #122939;
+    font-size: 24px;
+    margin: 0;
+}
+
+.price .offtax {
     color: #e5592e;
     font-size: 48px;
     margin: 0 8px -8px 8px;
 }
 
-.price , .price_lineOff .ontax {
+.price_lineOff .offtax {
+    color: #e5592e;
+    font-size: 48px;
+    margin: 0 8px -8px 8px;
+}
+
+.price .ontax {
+    color: #122939;
+    font-size: 24px;
+    margin: 0;
+}
+
+.price_lineOff .ontax {
     color: #122939;
     font-size: 24px;
     margin: 0;
