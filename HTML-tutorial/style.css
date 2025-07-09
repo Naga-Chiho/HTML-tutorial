@@ -1,7 +1,8 @@
 body {
     width: 100%;
     height: 100vh;
-    margin: -48px 0 0 0;
+    margin: -36px 0 0 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,6 +25,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 form {
@@ -32,6 +35,8 @@ form {
     flex-direction: row;
     justify-content: center;
     border-right: 1px solid #d9d9d9;
+    margin: 0;
+    padding: 0;
 }
 
 .logo {
@@ -42,6 +47,20 @@ form {
 
 h1 {
     font-size: 32px;
+    padding: 16px 0;
+}
+
+h4{
+    padding: 8px 0;
+}
+
+
+p{
+    padding: 4px 0;
+}
+
+strong {
+    padding: 12px;
 }
 
 ul {
@@ -49,11 +68,18 @@ ul {
     height: auto;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin-top: 12px;
     justify-content: space-between;
+
 }
 
 li {
+    width: auto;
+    height: auto;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 li a {
@@ -74,7 +100,7 @@ li a:hover {
 li p {
     display: flex;
     align-items: start;
-    margin-top: 4%;
+    margin-top: 3%;
 }
 
 li select {
@@ -84,7 +110,16 @@ li select {
     font-weight: 700;
     font-family: "Noto Sans JP", sans-serif;
     text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
+
+select {
+    padding: 0;
+    appearance: menulist-button;
+    /* -webkit-appearance: menulist; */
+}
+
 
 li select:hover {
     color: #959797;
@@ -127,13 +162,14 @@ li select:hover {
 
 .search form .search_img {
     position: absolute;
-    top: 24%;
-    right: 12%;
+    top: 28%;
+    right: 20%;
 }
 
 input {
     width: 80%;
     border: 1px solid #e0e0e0;
+    background-color: #FFF;
     border-radius: 8px;
     padding: 16px 20px;
     margin: 0 24px;
@@ -142,7 +178,7 @@ input {
 
 .header-inner form button {
     position: absolute;
-    right: 14px;
+    right: 24px;
     font-size: 25px;
 }
 
@@ -162,19 +198,31 @@ input {
     font-family: "Noto Sans JP", sans-serif;
 }
 
-.ad{
+.ad {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.into{
+.into {
     width: 64%;
 }
 
+.forever {
+    width: 12%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.forever span {
+    font-size: 12px;
+    margin:0;
+}
+
 .price {
-    width:32%;
+    width: 32%;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -185,21 +233,32 @@ input {
     border-bottom: 1px solid #000000;
 }
 
-.price .month {
-    color:#122939;
-    font-size:24px;
+.price_lineOff {
+    width: 32%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 12px 8px;
+    padding-bottom: 8px;
+}
+
+.price ,.price_lineOff .month {
+    color: #122939;
+    font-size: 24px;
     margin: 0;
 }
 
-.price .offtax {
-    color:#e5592e;
-    font-size:48px;
+.price , .price_lineOff .offtax {
+    color: #e5592e;
+    font-size: 48px;
     margin: 0 8px -8px 8px;
 }
 
-.price .ontax{
-    color:#122939;
-    font-size:24px;
+.price , .price_lineOff .ontax {
+    color: #122939;
+    font-size: 24px;
     margin: 0;
 }
 
@@ -209,46 +268,46 @@ input {
 }
 
 .admission {
-    width:26%;
-    margin:12px 0;
-    padding:16px 12px;
+    width: 26%;
+    margin: 12px 0;
+    padding: 16px 12px;
     border: none;
     border-radius: 12px;
-    color:#FFF;
-    font-size:20px;
+    color: #FFF;
+    font-size: 20px;
     font-weight: 700;
     background-color: #e5592e;
 }
 
-.admission-method{
-    width:26%;
-    margin:4px 0 24px 0;
-    padding:16px 12px;
+.admission-method {
+    width: 26%;
+    margin: 4px 0 24px 0;
+    padding: 16px 12px;
     border-radius: 12px;
     border: 1px solid #122939;
-    color:#000000;
-    font-size:12px;
+    color: #000000;
+    font-size: 12px;
     font-weight: 700;
     background-color: #ffffff;
 }
 
 .new-shop {
-    width:40%;
-    outline:none;
-    margin:4px;
+    width: 40%;
+    outline: none;
+    margin: 4px;
     border-radius: 12px;
 }
 
 .new-shop input {
-  width: 100%;
-  height: screen;
-  border-radius: 12px;
-  border: none;
-  outline: none;
+    width: 100%;
+    height: screen;
+    border-radius: 12px;
+    border: none;
+    outline: none;
 }
 
 .announce {
-    width:64%;
+    width: 64%;
     background: #ffebeb;
     display: flex;
     flex-direction: column;
@@ -259,21 +318,29 @@ input {
 }
 
 .announce h4 {
-    width:98%;
-    height: 12px;
-    padding:-12px 36px;
+    width: 98%;
+    height: auto;
+    padding: 10px 4px;
+    display: flex;
+    text-align: center;
+
 }
 
 .announce table {
     width: 98%;
     margin: 0 12px 4px 12px;
+    padding: 8px 4px;
     background-color: #FFF;
 }
 
+.announce td {
+    padding : 2px 0;
+}
+
 .day {
-    width:20%;
-    font-size:12px;
-    padding-left:8px;
+    width: 20%;
+    font-size: 12px;
+    padding-left: 8px;
 }
 
 .content {
@@ -292,11 +359,11 @@ input {
 }
 
 .shop-search form {
-    width:60%;
+    width: 60%;
 }
 
 .shop-search .search-button {
-    width:60%;
+    width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -336,18 +403,21 @@ input {
 
 .explanation .attention {
     font-size: 12px;
-    color:#959797;
+    color: #959797;
 }
 
-.explanation button , .cost button , .voice button, .question button , .service button{
+.explanation button,
+.cost button,
+.voice button,
+.question button,
+.service button {
     width: 28%;
-    margin: 8px;
+    margin: 24px 0 12px 0;
     padding: 12px 0;
     background-color: #FFF;
     border: 1px solid #959797;
     border-radius: 8px;
     font-weight: 700;
-
 }
 
 .reason {
@@ -362,20 +432,20 @@ input {
 }
 
 .reason .reason-boxes {
-    width:100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
 .reason .reason-box {
-    width:20%;
+    width: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-weight: 700;
     margin: 0 24px;
-    padding:12px;
+    padding: 24px 12px;
     border-radius: 8px;
     background-color: #FFF;
 }
@@ -387,18 +457,18 @@ input {
 
 .reason h4 {
     width: 80%;
-    font-size:14px;
+    font-size: 14px;
     text-align: center;
 }
 
 .reason p {
-    width:80%;
-    font-size:14px;
+    width: 80%;
+    font-size: 14px;
     font-weight: 400;
 }
 
 .cost {
-    width:100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -417,16 +487,35 @@ input {
 
 .service {
     width: 100%;
-    margin:48px 0;
+    margin: 48px 0;
     padding: 24px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:#eaeaea;
+    background-color: #eaeaea;
+}
+
+.servise-description {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0 12px 0;
+}
+
+.service-box-button {
+    width: 100%;
+    padding: 18px 12px;
+    text-decoration: none; 
+    color:#122939;
+    font-weight: 700;
 }
 
 .service p {
     font-size: 14px;
+}
+
+.service blue {
+    color: #206cbe;
 }
 
 .service table {
@@ -437,7 +526,7 @@ input {
 }
 
 .servise .description {
-    width:80%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
     background: #FFF;
@@ -448,7 +537,7 @@ input {
 }
 
 .service-box {
-    width:90%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     background: #FFF;
@@ -456,13 +545,17 @@ input {
     margin: 12px;
 }
 
+.service-box :hover {
+   opacity: 60%;
+}
+
 .service-box-none {
-    width:90%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     background: none;
     margin: 12px;
-    color:none;
+    color: none;
     opacity: 0;
 }
 
@@ -476,8 +569,23 @@ input {
     border-radius: 8px;
 }
 
+.service form {
+    background-color: transparent;
+    padding: 36px 0;
+}
+
+.service input {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    background-color: transparent;
+}
+
 .hospital {
     width: 50%;
+    border: none;
+    /* background-color: none; */
+    background-color: transparent;
     border: none;
 }
 
@@ -488,14 +596,15 @@ input {
     align-items: center;
 }
 
-.voises{
+.voises {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.voice1 , .voice2 {
+.voice1,
+.voice2 {
     width: 30%;
     margin: 0 12px;
     padding: 20px 12px;
@@ -507,17 +616,17 @@ input {
 }
 
 .voice strong {
-    width:100%;
+    width: 100%;
     margin: 12px 0;
 }
 
 .voice .name {
-    width:100%;
+    width: 100%;
     font-size: 12px;
 }
 
 .voice p {
-    font-size :12px;
+    font-size: 12px;
 }
 
 .voice .info {
@@ -539,7 +648,7 @@ input {
 }
 
 .step {
-    width:80%;
+    width: 80%;
 }
 
 .question {
@@ -547,7 +656,7 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin:60px 0;
+    margin: 60px 0;
 }
 
 .questions {
@@ -558,12 +667,12 @@ input {
     padding: 20px;
     border: 1px solid #d9d9d9;
     border-radius: 8px;
-    margin:12px 0;
+    margin: 12px 0;
 }
 
 
 footer {
-    width:100%;
+    width: 100%;
     height: auto;
     display: flex;
     align-items: flex-end;

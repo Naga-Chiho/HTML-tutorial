@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="これはChocoZAPのLPを作るチュートリアルです">
     <title>ChocoZAP-LP-Tutorial</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,8 +58,10 @@
             <secction class="ad">
                 <img src="/images/main.png" alt="main" class="into" />
                 <h1 class="price">
-                    <!-- <p class="forever">ずーっと</p> -->
-                    <p class="month">月額</p>
+                    <div class="forever">
+                        <span class="">ずーっと</span>
+                        <p class="month">月額</p>
+                    </div>
                     <p class="offtax">2,980円</p>
                     <p class="ontax">[税込3,278円]</p>
                 </h1>
@@ -139,38 +142,41 @@
                     <button>chocoZAPについて詳しく見る</button>
                     <button>体験者の声について詳しく見る</button>
                 </section>
-                <section class="reason">
+                <article class="reason">
                     <h1>選ばれる理由</h1>
-                    <!-- <div class="reason-boxes">
-                        <div class="reason-box">
+                    <article class="reason-boxes">
+                        <section class="reason-box">
                             <img src="/images/select1.png" alt="select1" />
                             <h4>着替え不要の24時間ジムだから通いやすい！</h4>
                             <p>服装自由、靴の履き替えも不要だから、スキマ時間でもサクッと通える！chocoZAP全店舗、24時間使えるので、自分のペースに合わせてご利用いただけます。</p>
-                        </div>
-                        <div class="reason-box">
+                        </section>
+                        <section class="reason-box">
                             <img src="/images/select2.png" alt="select2" />
                             <h4>嬉しいサービス盛りだくさん！</h4>
                             <p>ジムだけでなく、美容や健康、アミューズメント、ビジネスに役立つサービスなど盛りだくさん！全て、月額2,980円（税込3,278円）でご利用いただけます。</p>
-                        </div>
-                        <div class="reason-box">
+                        </section>
+                        <section class="reason-box">
                             <img src="/images/select3.png" alt="select3" />
                             <h4>スターターキットで変化を可視化！</h4>
                             <p>「体組成計」と「ヘルスウォッチ」をアプリと連携して、身体の変化を記録すると、健康増進に効果抜群！</p>
-                        </div>
-                    </div> -->
-                </section>
+                        </section>
+                    </article>
+                </article>
                 <section class="cost">
                     <h1>料金</h1>
                     <p>サービスおよび関連設備は店舗により異なり、取扱いのない店舗もございます。<br />詳しくは店舗ページでご確認ください。</p>
                     <img src="/images/comicomi.png" alt="comicomi" />
-                    <!-- <div class="cost-description"> -->
+                    <div class="cost-description">
                         <p>※サービスは予告なく変更となる場合がございます。</p>
                         <p>※カラオケ・ピラティス・ランドリー・ゴルフ・ワークスペースは一部店舗限定のサービスです。</p>
                         <p>※トレーニングマシン・デスクバイク・ピラティス・ワークスペース以外のご利用にはアプリからのご予約が必要です。</p>
                         <p>※1枠20分〜 (各サービスの中から最大4枠/1日) ご予約可能です。メンテナンス時間によりご利用いただけない時間帯<br />がございます。</p>
-                    <!-- </div> -->
-                    <h1 class="price">
-                        <p class="month">月額</p>
+                    </div>
+                    <h1 class="price_lineOff">
+                        <div class="forever">
+                            <span class="">ずーっと</span>
+                            <p class="month">月額</p>
+                        </div>
                         <p class="offtax">2,980円</p>
                         <p class="ontax">[税込3,278円]</p>
                     </h1>
@@ -179,63 +185,54 @@
                 </section>
                 <section class="service">
                     <h1>サービス</h1>
-                    <p>サービスおよび関連設備は店舗により異なり、取扱いのない店舗もございます。<br />詳しくは店舗ページでご確認ください。</p>
-                    <!-- <div class="servise-description"> -->
+                    <p>サービスおよび関連設備は店舗により異なり、取扱いのない店舗もございます。<br />詳しくは<span style="color: rgb(74, 135, 233);">店舗ページ</span>でご確認ください。</p>
+                    <div class="servise-description">
                         <p>※サービスは予告なく変更となる場合がございます。</p>
                         <p>※カラオケ・ピラティス・ランドリー・ゴルフ・ワークスペースは一部店舗限定のサービスです。</p>
                         <p>※トレーニングマシン・デスクバイク・ピラティス・ワークスペース以外のご利用にはアプリからのご予約が必要です。</p>
                         <p>※1枠20分〜 (各サービスの中から最大4枠/1日) ご予約可能です。メンテナンス時間によりご利用いただけない時間帯がございます。</p>
-                    <!-- </div> -->
+                    </div>
                     <table>
                         <tr>
                             <td class="service-box">
                                 <img src="/images/service1.png" alt="service1" />
-                                <strong>トレーニングマシン</strong>
-                                <button>></button>
+                                <a href="#" class="service-box-button">トレーニングマシン ></a>
                             </td>
                             <td class="service-box">
                                 <img src="/images/service2.png" alt="service2" />
-                                <strong>スターターキット</strong>
-                                <button>></button>
+                                <a href="#" class="service-box-button">スターターキット ></a>
                             </td>
                             <td class="service-box">
                                 <img src="/images/service3.png" alt="service3" />
-                                <strong>セルフエステ</strong>
-                                <button>></button>
+                                <a href="#" class="service-box-button">セルフエステ ></a>
                             </td>
                         </tr>
                         <tr>
                             <td class="service-box">
                                 <img src="/images/servise4.png" alt="service4" />
-                                <strong>セルフ脱毛</strong>
-                                <button>></button>
+                                <a href="#" class="service-box-button">セルフ脱毛 ></a>
                             </td>
                             <td class="service-box">
                                 <img src="/images/servise5.png" alt="service5" />
-                                <strong>セルフホワイトニング</strong>
-                                <button>></button>
+                                <a href="#" class="service-box-button">セルフホワイトニング ></a>
                             </td>
                             <td class="service-box">
                                 <img src="/images/servise6.png" alt="service6" />
-                                <strong>セルフネイル</strong>
-                                <button>></button>
+                                <a href="#" class="service-box-button">セルフネイル ></a>
                             </td>
                         </tr>
                         <tr>
                             <td class="service-box">
                                 <img src="/images/servise7.png" alt="service7" />
-                                <strong>マッサージチェア</strong>
-                                <button>></button>
+                                <a href="#" class="service-box-button">マッサージチェア ></a>
                             </td>
                             <td class="service-box">
                                 <img src="/images/servise8.png" alt="service8" />
-                                <strong>デスクバイク</strong>
-                                <button>></button>
+                                <a href="#" class="service-box-button">デスクバイク ></a>
                             </td>
                             <td class="service-box">
                                 <img src="/images/servise9.png" alt="service9" />
-                                <strong>アプリ</strong>
-                                <button>></button>
+                                <a href="#" class="service-box-button">アプリ ></a>
                             </td>
                         </tr>
                     </table>
@@ -245,35 +242,29 @@
                         <tr>
                             <td class="service-box">
                                 <img src="/images/servise10.png" alt="service10" />
-                                <strong>カラオケ</strong>
-                                <button>></button>
+                                <a href="#" class="service-box-button">カラオケ ></a>
                             </td>
                             <td class="service-box">
                                 <img src="/images/servise11.png" alt="service11" />
-                                <strong>ランドリー</strong>
-                                <button>></button>
+                                <a href="#" class="service-box-button">ランドリー ></a>
                             </td>
                             <td class="service-box">
                                 <img src="/images/servise12.png" alt="service12" />
-                                <strong>ピラティス</strong>
-                                <button>></button>
+                                <a href="#" class="service-box-button">ピラティス ></a>
                             </td>
                         </tr>
                         <tr>
                             <td class="service-box">
                                 <img src="/images/servise13.png" alt="service13" />
-                                <strong>カラオケ</strong>
-                                <button>></button>
+                                <a href="#" class="service-box-button">カラオケ ></a>
                             </td>
                             <td class="service-box">
                                 <img src="/images/servise14.png" alt="service14" />
-                                <strong>ランドリー</strong>
-                                <button>></button>
+                                <a href="#" class="service-box-button">ワークスペース ></a>
                             </td>
                             <td class="service-box-none">
                                 <img src="/images/servise14.png" alt="service14" />
-                                <strong>ランドリー</strong>
-                                <button>></button>
+                                <a href="#" class="service-box-button">ランドリー ></a>
                             </td>
                         </tr>
                     </table>
@@ -284,7 +275,7 @@
                 </section>
                 <section class="voice">
                     <h1>体験者の声</h1>
-                    <!-- <div class="voises"> -->
+                    <section class="voises">
                         <section class="voice1">
                             <img src="images/abe.png" alt="abe" />
                             <strong>運動経験ゼロから体を動かすライフスタイルに。小さな成功体験が自信につながった</strong>
@@ -313,7 +304,7 @@
                                 できるようになりました。無理せず自然と健康的な生活になったと思います。</p>
                             <button class="info">続きを見る＞</button>
                         </section>
-                    <!-- </div> -->
+                    </section>
                     <button>他の体験者の声をもっと見る</button>
                 </section>
                 <section class="method">
@@ -325,7 +316,7 @@
                 <button class="admission-method">入会方法について詳しく見る</button>
                 <section class="question">
                     <h1>よくあるご質問</h1>
-                    <!-- <div class="questions"> -->
+                    <div class="questions">
                         <details>
                             <summary>セキュリティは大丈夫？</summary>
                             <strong>AIによる監視カメラでトラブルを徹底的に防ぐため、全店舗24時間防犯カメラで録画しています。</strong>
@@ -353,7 +344,7 @@
                             <p>※ 使い放題はトレーニングマシンに限ります</p>
                             <p>※ 一部、テナント規制により24時間営業ではない店舗・休館日がある店舗もございます。</p>
                         </details>
-                    <!-- </div> -->
+                    </div>
                     <button>よくあるご質問を詳しく見る</button>
                 </section>
         </article>
