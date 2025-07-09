@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="これはChocoZAPのLPを作るチュートリアルです">
     <title>ChocoZAP-LP-Tutorial</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <img src="images/logo.png" alt="logo" />
+        <img src="images/logo.png" alt="logo" class="logo" />
         <nav>
             <ul>
                 <li><a href="#">店舗検索</a></li>
@@ -37,360 +41,315 @@
                     </p>
                 </li>
                 <li>
-                    <a href="#">入会</a>
+                    <button class="header-button">入会はこちら</button>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
         <article>
-            <section>
-                <form action="exapmle.php" method="post" name="search">
+            <section class="search">
+                <form>
+                    <img src="/images/search.png" alt="search" class="search_img" />
                     <input type="text" placeholder="駅名・店名で探す" />
                 </form>
-                <button>お近くの店舗</button>
-                <img src="/images/main.png" alt="main" />
-                <h1>
-                    <p>ずーっと</p>
-                    月額2980円[税込3,278円]
+                <button class="shop">お近くの店舗</button>
+            </section>
+            <secction class="ad">
+                <img src="/images/main.png" alt="main" class="into" />
+                <h1 class="price">
+                    <div class="forever">
+                        <span class="">ずーっと</span>
+                        <p class="month">月額</p>
+                    </div>
+                    <p class="offtax">2,980円</p>
+                    <p class="ontax">[税込3,278円]</p>
                 </h1>
-                <img src="/images/explanation.png" alt="exapmle" />
-                <form action="exapmle.php" method="post" name="taikan">
-                    <input type="image" src="/images/taikan.png" alt="taikan" />
-                </form>
-                <button>入会はこちら</button>
-                <button>入会方法について</button>
-                <form action="exapmle.php" method="post" name="taikan">
+                <img src="/images/explanation.png" alt="exapmle" class="ad2" />
+                <img src="/images/taikan.png" alt="taikan" class="ad2" />
+                <button class="admission">入会はこちら</button>
+                <button class="admission-method">入会方法について詳しく見る</button>
+                <form action="exapmle.php" method="post" name="taikan" class="new-shop">
                     <input type="image" src="/images/newstore.png" alt="newstore" />
                 </form>
-                <form action="exapmle.php" method="post" name="taikan">
+                <form action="exapmle.php" method="post" name="taikan" class="new-shop">
                     <input type="image" src="/images/guide.png" alt="guide" />
                 </form>
-            </section>
-            <section>
-                <table>
-                    <tr>
-                        <td>
-                            <p>2025年6月24日(火)</p>
-                        </td>
-                        <td>
-                            <p>【重要】Wi-Fi接続方法を従来方式に戻しました</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>2025年6月24日(火)</p>
-                        </td>
-                        <td>
-                            <p>【障害発生/解消済】モトローラ社製スマートフォンでchocoZAPアプリが強制終了する事象について</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>2025年6月21日(土)</p>
-                        </td>
-                        <td>
-                            <p>新サービス「ちょこっとパーソナル」開始のお知らせ（一部店舗）</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>2025年6月20日(金)</p>
-                        </td>
-                        <td>
-                            <p>【障害発生】iPhone iOS16における一部画面の表示不具合について</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>2025年6月19日(木)</p>
-                        </td>
-                        <td>
-                            <p>【Mini人間ドック（MRI・CT・エコー検査）】2025年7月31日までのご予約を受付開始（新宿の提携医療機関にて） いたしました。</p>
-                        </td>
-                    </tr>
-                </table>
-            </section>
-            <section>
-                <h1>店舗検索</h1>
-                <form action="exapmle.php" method="post" name="tenpo">
-                    <input type="text" placeholder="駅名・店名で探す" />
-                </form>
-                <button>エリアから探す</button>
-                <button>お近くの店舗を探す</button>
-            </section>
-            <section>
-                <h1>chocoZAPとは？</h1>
-                <img src="/images/sample.png" alt="sample" />
-                <h3>スマホひとつで通えるスマートライフジム</h3>
-                <p>chocoZAP (チョコザップ) は体も心も健康になれる、スマートライフジムです。使えば使うほど、特別だったものが身近なものに変わ<br />り、充実した日常になる！月額2,980円
-                    (税込3,278円)
-                    で、ジムやアプリによる健康アドバイス、美容、アミューズメントなどが追加料<br />金なしでご利用いただけます。</p>
-                <p>※サービスおよび関連設備は店舗により異なり、取扱いのない店舗もございます。詳しくは店舗ページでご確認ください。</p>
-                <button>chocoZAPについて</button>
-                <button>体験者の声について</button>
-            </section>
-            <section>
-                <h1>選ばれる理由</h1>
-                <table>
-                    <tr>
-                        <td>
-                            <img src="/images/select1.png" alt="select1" />
-                        </td>
-                        <td>
-                            <img src="/images/select2.png" alt="select2" />
-                        </td>
-                        <td>
-                            <img src="/images/select3.png" alt="select3" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            着替え不要の24時間ジムだから<br />通いやすい！
-                        </td>
-                        <td>
-                            嬉しいサービス<br />盛りだくさん！
-                        </td>
-                        <td>
-                            スターターキットで<br />変化を可視化！
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            服装自由、靴の履き替えも不要だから、スキマ時間でもサクッと通える！chocoZAP全店舗、24時間使えるので、自分のペースに合わせてご利用いただけます。
-                        </td>
-                        <td>
-                            着替え不要の24時間ジムだから通いやすい！
-                        </td>
-                        <td>
-                            着替え不要の24時間ジムだから通いやすい！
-                        </td>
-                    </tr>
-                </table>
-            </section>
-            <section>
-                <h1>料金</h1>
-                <p>サービスおよび関連設備は店舗により異なり、取扱いのない店舗もございます。<br />詳しくは店舗ページでご確認ください。</p>
-                <img src="/images/comicomi.png" alt="comicomi" />
-                <p>※サービスは予告なく変更となる場合がございます。</p>
-                <p>※カラオケ・ピラティス・ランドリー・ゴルフ・ワークスペースは一部店舗限定のサービスです。</p>
-                <p>※トレーニングマシン・デスクバイク・ピラティス・ワークスペース以外のご利用にはアプリからのご予約が必要です。</p>
-                <p>※1枠20分〜 (各サービスの中から最大4枠/1日) ご予約可能です。メンテナンス時間によりご利用いただけない時間帯<br />がございます。</p>
-                <h1>
-                    <span>ずーっと</span>
-                    月額2980円[税込3,278円]
-                </h1>
-                <p>※キャンペーン価格ではありません。</p>
-                <button>料金について詳しく見る</button>
-            </section>
-            <section>
-                <h1>サービス</h1>
-                <p>サービスおよび関連設備は店舗により異なり、取扱いのない店舗もございます。<br />詳しくは店舗ページでご確認ください。</p>
-                <p>※サービスは予告なく変更となる場合がございます。</p>
-                <p>※カラオケ・ピラティス・ランドリー・ゴルフ・ワークスペースは一部店舗限定のサービスです。</p>
-                <p>※トレーニングマシン・デスクバイク・ピラティス・ワークスペース以外のご利用にはアプリからのご予約が必要です。</p>
-                <p>※1枠20分〜 (各サービスの中から最大4枠/1日) ご予約可能です。メンテナンス時間によりご利用いただけない時間帯がございます。</p>
-                <table>
-                    <tr>
-                        <td>
-                            <img src="/images/service1.png" alt="service1" />
-                        </td>
-                        <td>
-                            <img src="/images/service2.png" alt="service2" />
-                        </td>
-                        <td>
-                            <img src="/images/service3.png" alt="service3" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <strong>トレーニングマシン</strong>
-                            <button>></button>
-                        </td>
-                        <td>
-                            <strong>スターターキット</strong>
-                            <button>></button>
-                        </td>
-                        <td>
-                            <strong>セルフエステ</strong>
-                            <button>></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="/images/servise4.png" alt="service4" />
-                        </td>
-                        <td>
-                            <img src="/images/servise5.png" alt="service5" />
-                        </td>
-                        <td>
-                            <img src="/images/servise6.png" alt="service6" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <strong>セルフ脱毛</strong>
-                            <button>></button>
-                        </td>
-                        <td>
-                            <strong>セルフホワイトニング</strong>
-                            <button>></button>
-                        </td>
-                        <td>
-                            <strong>セルフネイル</strong>
-                            <button>></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="/images/servise7.png" alt="service7" />
-                        </td>
-                        <td>
-                            <img src="/images/servise8.png" alt="service8" />
-                        </td>
-                        <td>
-                            <img src="/images/servise9.png" alt="service9" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <strong>マッサージチェア</strong>
-                            <button>></button>
-                        </td>
-                        <td>
-                            <strong>デスクバイク</strong>
-                            <button>></button>
-                        </td>
-                        <td>
-                            <strong>アプリ</strong>
-                            <button>></button>
-                        </td>
-                    </tr>
-                </table>
-                <strong>▼一部店舗限定▼</strong>
-                <p>詳しくは店舗ページでご確認ください。</p>
-                <table>
-                    <tr>
-                        <td>
-                            <img src="/images/servise10.png" alt="service10" />
-                        </td>
-                        <td>
-                            <img src="/images/servise11.png" alt="service11" />
-                        </td>
-                        <td>
-                            <img src="/images/servise12.png" alt="service12" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <strong>カラオケ</strong>
-                            <button>></button>
-                        </td>
-                        <td>
-                            <strong>ランドリー</strong>
-                            <button>></button>
-                        </td>
-                        <td>
-                            <strong>ピラティス</strong>
-                            <button>></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="/images/servise13.png" alt="service13" />
-                        </td>
-                        <td>
-                            <img src="/images/servise14.png" alt="service14" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <strong>カラオケ</strong>
-                            <button>></button>
-                        </td>
-                        <td>
-                            <strong>ランドリー</strong>
-                            <button>></button>
-                        </td>
-                    </tr>
-                </table>
-                <form action="exapmle.php" method="post" name="hospital">
-                    <input type="image" src="/images/hospital.png" alt="hospital" />
-                </form>
-                <button>サービスについて詳しく見る</button>
-            </section>
-            <section>
-                <h1>体験者の声</h1>
-                <section>
-                    <img src="images/abe.png" alt="abe" />
-                    <strong>運動経験ゼロから体を動かすライフスタイルに。小さな成功体験が自信につながった</strong>
-                    <p>阿部 徹さん</p>
-                    <p>チョコザップに入会してから本当に生活がガラッと変わりました。<br />
-                        ダラダラと寝てしまっていた時間を筋トレに費やして充実した気分<br />
-                        になるし、階段も苦じゃなくなり、体を動かすことが楽になった<br />
-                        り、姿勢がいいねと褒められたり、小さな成功体験を積み重ねるこ<br />
-                        とができています。自信に繋がって、挑戦したいことも色々出てき<br />
-                        ました。一つは、筋トレの楽しさを同年代の人に伝えること。「こ<br />
-                        いつができるなら、自分もできそう」だと思ってもらいたい。そし<br />
-                        て、自分が憧れているアクションスターがいるのですが、彼に近づ<br>
-                        けたらいいなと思っています。</p>
-                    <button>続きを見る＞</button>
                 </section>
-                <section>
-                    <img src="images/otuka.png" alt="abe" />
-                    <strong>食べることが大好き！ 運動してるから、好きなものを食べても罪悪感なしです</strong>
-                    <p>大塚 冴子さん</p>
-                    <p>食べることが大好きなので、好きなものを食べ続けるために運動しなくてはと思<br />
-                        っていたものの、趣味のボルダリング以外ずっと継続できませんでした。チョコ<br />
-                        ザップに入会してからは、夕ごはんを食べて少し休憩した後、ほぼ毎日のように<br />
-                        チョコザップでトレーニングしています。そのおかげで食べるときの罪悪感が減<br />
-                        っているし、体のコンディションもキープできています。前は夕ごはん後にデザ<br />
-                        ートを食べる習慣があったのですが、チョコザップに行くから、それもスキップ<br />
-                        できるようになりました。無理せず自然と健康的な生活になったと思います。</p>
-                    <button>続きを見る＞</button>
+                <section class="announce">
+                    <h4>ⓘ 重要なお知らせ</h4>
+                    <table>
+                        <tr>
+                            <td class="day">
+                                <p>2025年6月24日(火)</p>
+                            </td>
+                            <td class="content">
+                                <p>【重要】Wi-Fi接続方法を従来方式に戻しました</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="day">
+                                <p>2025年6月24日(火)</p>
+                            </td>
+                            <td class="content">
+                                <p>【障害発生/解消済】モトローラ社製スマートフォンでchocoZAPアプリが強制終了する事象について</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="day">
+                                <p>2025年6月21日(土)</p>
+                            </td>
+                            <td class="content">
+                                <p>新サービス「ちょこっとパーソナル」開始のお知らせ（一部店舗）</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="day">
+                                <p>2025年6月20日(金)</p>
+                            </td>
+                            <td class="content">
+                                <p>【障害発生】iPhone iOS16における一部画面の表示不具合について</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="day">
+                                <p>2025年6月19日(木)</p>
+                            </td>
+                            <td class="content">
+                                <p>【Mini人間ドック（MRI・CT・エコー検査）】2025年7月31日までのご予約を受付開始（新宿の提携医療機関にて） いたしました。</p>
+                            </td>
+                        </tr>
+                    </table>
                 </section>
-                <button>他の体験者の声をもっと見る</button>
-            </section>
-            <section>
-                <img src="images/choco.png" alt="choco" />
-                <h1>入会方法</h1>
-                <img src="images/step.png" alt="step" />
-                <button>入会はこちら</button>
-                <button>入会方法について詳しく見る</button>
-            </section>
-            <section>
-                <h1>よくあるご質問</h1>
-                <details>
-                    <summary>セキュリティは大丈夫？</summary>
-                    <strong>AIによる監視カメラでトラブルを徹底的に防ぐため、全店舗24時間防犯カメラで録画しています。</strong>
-                    <p>然るべき対応が必要な場合に、映像を確認して警察に届出をいたします。chocoZAP会員様はスマートフォンで開錠しますので、会員様以外は入店できません。</p>
-                    <p> ※一部、体験利用等のお客様が入店することがございます。</p>
-                </details>
-                <details>
-                    <summary>運動が苦手だし、マシンは使ったことがないから不安…</summary>
-                    <strong>初心者でも簡単！chocoZAPのトレーニングマシンは、スタートまで2ステップ！</strong>
-                    <p>STEP 1 : 椅子の高さ調整や重りのピンをさす<br />
-                        STEP 2 : 呼吸を丁寧にマシンを動かす！<br />
-                        基本的にトレーニング動作は、力を入れる際に押すか、引くか、上げる！のみ。専用アプリにも詳しい使い方動画があります。chocoZAP入会者の50%はジム初心者なのでご安心ください。</p>
-                </details>
-                <details>
-                    <summary>ジムに行っても何をすればいいのかわからないよ！</summary>
-                    <strong>あなたの目的に合ったメニューをアプリが提案します！</strong>
-                    <p>ジムでのトレーニングはもちろん、ジムにいけない日は自宅でできる運動も教えてくれるので迷うことなし！</p>
-                </details>
-                <details>
-                    <summary>24時間365日全店舗ご利用可能です。さらに全店舗、使い放題です！</summary>
-                    <strong>AIによる監視カメラでトラブルを徹底的に防ぐため、全店舗24時間防犯カメラで録画しています。</strong>
-                    <p>出勤前、昼休み、退勤後、休日など都合の良い時間に好きなだけ通えます！しかも全店舗通えるので、休みの日は自宅近く、平日は会社の近く、など生活スタイルに合わせてご利用いただけます。だから、chocoZAPは80%以上の方が週に1回以上の来店！
+                <section class="shop-search">
+                    <h1>店舗検索</h1>
+                    <form action="exapmle.php" method="post" name="tenpo">
+                        <input type="text" placeholder="駅名・店名で探す" />
+                    </form>
+                    <div class="search-button">
+                        <button>エリアから探す</button>
+                        <button>お近くの店舗を探す</button>
+                        </button>
+                </section>
+                <section class="explanation">
+                    <h1>chocoZAPとは？</h1>
+                    <img src="/images/sample.png" alt="sample" />
+                    <h3>スマホひとつで通えるスマートライフジム</h3>
+                    <p>chocoZAP (チョコザップ)
+                        は体も心も健康になれる、スマートライフジムです。使えば使うほど、特別だったものが身近なものに変わり、充実した日常になる！月額2,980円(税込3,278円)で、ジムやアプリによる健康アドバイス、美容、アミューズメントなどが追加料金なしでご利用いただけます。
                     </p>
-                    <p>※ 使い放題はトレーニングマシンに限ります</p>
-                    <p>※ 一部、テナント規制により24時間営業ではない店舗・休館日がある店舗もございます。</p>
-                </details>
-                <button>よくあるご質問を詳しく見る</button>
-            </section>
+                    <p class="attention">※サービスおよび関連設備は店舗により異なり、取扱いのない店舗もございます。詳しくは店舗ページでご確認ください。</p>
+                    <button>chocoZAPについて詳しく見る</button>
+                    <button>体験者の声について詳しく見る</button>
+                </section>
+                <article class="reason">
+                    <h1>選ばれる理由</h1>
+                    <article class="reason-boxes">
+                        <section class="reason-box">
+                            <img src="/images/select1.png" alt="select1" />
+                            <h4>着替え不要の24時間ジムだから通いやすい！</h4>
+                            <p>服装自由、靴の履き替えも不要だから、スキマ時間でもサクッと通える！chocoZAP全店舗、24時間使えるので、自分のペースに合わせてご利用いただけます。</p>
+                        </section>
+                        <section class="reason-box">
+                            <img src="/images/select2.png" alt="select2" />
+                            <h4>嬉しいサービス盛りだくさん！</h4>
+                            <p>ジムだけでなく、美容や健康、アミューズメント、ビジネスに役立つサービスなど盛りだくさん！全て、月額2,980円（税込3,278円）でご利用いただけます。</p>
+                        </section>
+                        <section class="reason-box">
+                            <img src="/images/select3.png" alt="select3" />
+                            <h4>スターターキットで変化を可視化！</h4>
+                            <p>「体組成計」と「ヘルスウォッチ」をアプリと連携して、身体の変化を記録すると、健康増進に効果抜群！</p>
+                        </section>
+                    </article>
+                </article>
+                <section class="cost">
+                    <h1>料金</h1>
+                    <p>サービスおよび関連設備は店舗により異なり、取扱いのない店舗もございます。<br />詳しくは店舗ページでご確認ください。</p>
+                    <img src="/images/comicomi.png" alt="comicomi" />
+                    <div class="cost-description">
+                        <p>※サービスは予告なく変更となる場合がございます。</p>
+                        <p>※カラオケ・ピラティス・ランドリー・ゴルフ・ワークスペースは一部店舗限定のサービスです。</p>
+                        <p>※トレーニングマシン・デスクバイク・ピラティス・ワークスペース以外のご利用にはアプリからのご予約が必要です。</p>
+                        <p>※1枠20分〜 (各サービスの中から最大4枠/1日) ご予約可能です。メンテナンス時間によりご利用いただけない時間帯<br />がございます。</p>
+                    </div>
+                    <h1 class="price_lineOff">
+                        <div class="forever">
+                            <span class="">ずーっと</span>
+                            <p class="month">月額</p>
+                        </div>
+                        <p class="offtax">2,980円</p>
+                        <p class="ontax">[税込3,278円]</p>
+                    </h1>
+                    <p>※キャンペーン価格ではありません。</p>
+                    <button>料金について詳しく見る</button>
+                </section>
+                <section class="service">
+                    <h1>サービス</h1>
+                    <p>サービスおよび関連設備は店舗により異なり、取扱いのない店舗もございます。<br />詳しくは<span style="color: rgb(74, 135, 233);">店舗ページ</span>でご確認ください。</p>
+                    <div class="servise-description">
+                        <p>※サービスは予告なく変更となる場合がございます。</p>
+                        <p>※カラオケ・ピラティス・ランドリー・ゴルフ・ワークスペースは一部店舗限定のサービスです。</p>
+                        <p>※トレーニングマシン・デスクバイク・ピラティス・ワークスペース以外のご利用にはアプリからのご予約が必要です。</p>
+                        <p>※1枠20分〜 (各サービスの中から最大4枠/1日) ご予約可能です。メンテナンス時間によりご利用いただけない時間帯がございます。</p>
+                    </div>
+                    <table>
+                        <tr>
+                            <td class="service-box">
+                                <img src="/images/service1.png" alt="service1" />
+                                <a href="#" class="service-box-button">トレーニングマシン ></a>
+                            </td>
+                            <td class="service-box">
+                                <img src="/images/service2.png" alt="service2" />
+                                <a href="#" class="service-box-button">スターターキット ></a>
+                            </td>
+                            <td class="service-box">
+                                <img src="/images/service3.png" alt="service3" />
+                                <a href="#" class="service-box-button">セルフエステ ></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="service-box">
+                                <img src="/images/servise4.png" alt="service4" />
+                                <a href="#" class="service-box-button">セルフ脱毛 ></a>
+                            </td>
+                            <td class="service-box">
+                                <img src="/images/servise5.png" alt="service5" />
+                                <a href="#" class="service-box-button">セルフホワイトニング ></a>
+                            </td>
+                            <td class="service-box">
+                                <img src="/images/servise6.png" alt="service6" />
+                                <a href="#" class="service-box-button">セルフネイル ></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="service-box">
+                                <img src="/images/servise7.png" alt="service7" />
+                                <a href="#" class="service-box-button">マッサージチェア ></a>
+                            </td>
+                            <td class="service-box">
+                                <img src="/images/servise8.png" alt="service8" />
+                                <a href="#" class="service-box-button">デスクバイク ></a>
+                            </td>
+                            <td class="service-box">
+                                <img src="/images/servise9.png" alt="service9" />
+                                <a href="#" class="service-box-button">アプリ ></a>
+                            </td>
+                        </tr>
+                    </table>
+                    <strong>▼一部店舗限定▼</strong>
+                    <p>詳しくは店舗ページでご確認ください。</p>
+                    <table>
+                        <tr>
+                            <td class="service-box">
+                                <img src="/images/servise10.png" alt="service10" />
+                                <a href="#" class="service-box-button">カラオケ ></a>
+                            </td>
+                            <td class="service-box">
+                                <img src="/images/servise11.png" alt="service11" />
+                                <a href="#" class="service-box-button">ランドリー ></a>
+                            </td>
+                            <td class="service-box">
+                                <img src="/images/servise12.png" alt="service12" />
+                                <a href="#" class="service-box-button">ピラティス ></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="service-box">
+                                <img src="/images/servise13.png" alt="service13" />
+                                <a href="#" class="service-box-button">カラオケ ></a>
+                            </td>
+                            <td class="service-box">
+                                <img src="/images/servise14.png" alt="service14" />
+                                <a href="#" class="service-box-button">ワークスペース ></a>
+                            </td>
+                            <td class="service-box-none">
+                                <img src="/images/servise14.png" alt="service14" />
+                                <a href="#" class="service-box-button">ランドリー ></a>
+                            </td>
+                        </tr>
+                    </table>
+                    <form action="exapmle.php" method="post" name="hospital" class="hospital">
+                        <input type="image" src="/images/hospital.png" alt="hospital" />
+                    </form>
+                    <button>サービスについて詳しく見る</button>
+                </section>
+                <section class="voice">
+                    <h1>体験者の声</h1>
+                    <section class="voises">
+                        <section class="voice1">
+                            <img src="images/abe.png" alt="abe" />
+                            <strong>運動経験ゼロから体を動かすライフスタイルに。小さな成功体験が自信につながった</strong>
+                            <p class="name">阿部 徹さん</p>
+                            <p>チョコザップに入会してから本当に生活がガラッと変わりました。
+                                ダラダラと寝てしまっていた時間を筋トレに費やして充実した気分
+                                になるし、階段も苦じゃなくなり、体を動かすことが楽になった
+                                り、姿勢がいいねと褒められたり、小さな成功体験を積み重ねるこ
+                                とができています。自信に繋がって、挑戦したいことも色々出てき
+                                ました。一つは、筋トレの楽しさを同年代の人に伝えること。「こ
+                                いつができるなら、自分もできそう」だと思ってもらいたい。そし
+                                て、自分が憧れているアクションスターがいるのですが、彼に近づ
+                                けたらいいなと思っています。</p>
+                            <button class="info">続きを見る＞</button>
+                        </section>
+                        <section class="voice2">
+                            <img src="images/otuka.png" alt="abe" />
+                            <strong>食べることが大好き！ 運動してるから、好きなものを食べても罪悪感なしです</strong>
+                            <p class="name">大塚 冴子さん</p>
+                            <p>食べることが大好きなので、好きなものを食べ続けるために運動しなくてはと思
+                                っていたものの、趣味のボルダリング以外ずっと継続できませんでした。チョコ
+                                ザップに入会してからは、夕ごはんを食べて少し休憩した後、ほぼ毎日のように
+                                チョコザップでトレーニングしています。そのおかげで食べるときの罪悪感が減
+                                っているし、体のコンディションもキープできています。前は夕ごはん後にデザ
+                                ートを食べる習慣があったのですが、チョコザップに行くから、それもスキップ
+                                できるようになりました。無理せず自然と健康的な生活になったと思います。</p>
+                            <button class="info">続きを見る＞</button>
+                        </section>
+                    </section>
+                    <button>他の体験者の声をもっと見る</button>
+                </section>
+                <section class="method">
+                    <img src="images/choco.png" alt="choco" />
+                    <h1>入会方法</h1>
+                    <img src="images/step.png" alt="step" class="step" />
+                </section>
+                <button class="admission">入会はこちら</button>
+                <button class="admission-method">入会方法について詳しく見る</button>
+                <section class="question">
+                    <h1>よくあるご質問</h1>
+                    <div class="questions">
+                        <details>
+                            <summary>セキュリティは大丈夫？</summary>
+                            <strong>AIによる監視カメラでトラブルを徹底的に防ぐため、全店舗24時間防犯カメラで録画しています。</strong>
+                            <p>然るべき対応が必要な場合に、映像を確認して警察に届出をいたします。chocoZAP会員様はスマートフォンで開錠しますので、会員様以外は入店できません。</p>
+                            <p> ※一部、体験利用等のお客様が入店することがございます。</p>
+                        </details>
+                        <details>
+                            <summary>運動が苦手だし、マシンは使ったことがないから不安…</summary>
+                            <strong>初心者でも簡単！chocoZAPのトレーニングマシンは、スタートまで2ステップ！</strong>
+                            <p>STEP 1 : 椅子の高さ調整や重りのピンをさす<br />
+                                STEP 2 : 呼吸を丁寧にマシンを動かす！<br />
+                                基本的にトレーニング動作は、力を入れる際に押すか、引くか、上げる！のみ。専用アプリにも詳しい使い方動画があります。chocoZAP入会者の50%はジム初心者なのでご安心ください。
+                            </p>
+                        </details>
+                        <details>
+                            <summary>ジムに行っても何をすればいいのかわからないよ！</summary>
+                            <strong>あなたの目的に合ったメニューをアプリが提案します！</strong>
+                            <p>ジムでのトレーニングはもちろん、ジムにいけない日は自宅でできる運動も教えてくれるので迷うことなし！</p>
+                        </details>
+                        <details>
+                            <summary>24時間365日全店舗ご利用可能です。さらに全店舗、使い放題です！</summary>
+                            <strong>AIによる監視カメラでトラブルを徹底的に防ぐため、全店舗24時間防犯カメラで録画しています。</strong>
+                            <p>出勤前、昼休み、退勤後、休日など都合の良い時間に好きなだけ通えます！しかも全店舗通えるので、休みの日は自宅近く、平日は会社の近く、など生活スタイルに合わせてご利用いただけます。だから、chocoZAPは80%以上の方が週に1回以上の来店！
+                            </p>
+                            <p>※ 使い放題はトレーニングマシンに限ります</p>
+                            <p>※ 一部、テナント規制により24時間営業ではない店舗・休館日がある店舗もございます。</p>
+                        </details>
+                    </div>
+                    <button>よくあるご質問を詳しく見る</button>
+                </section>
         </article>
     </main>
-    <footer>
+    <!-- <footer>
         <img src="/images/footer.png" alt="footer" />
         <nav>
             <ul>
@@ -400,7 +359,7 @@
                 <li><a href="#">海外店舗</a></li>
             </ul>
         </nav>
-    </footer>
+    </footer> -->
 </body>
 
 </html>
