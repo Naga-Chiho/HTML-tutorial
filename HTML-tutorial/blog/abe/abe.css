@@ -192,28 +192,32 @@ li select:hover {
     display: flex;
     justify-content: center;
 
-    .mokuji {
+    aside {
         width: 20%;
         margin: 48px 12px 12px 12px;
 
+        .mokuji {
+            position: sticky;
+            top: 50px;
 
-        p {
-            background-color: #e8e6e6;
-            color: #959797;
-            padding: 4px 8px;
-            border-radius: 8px;
+
+            p {
+                background-color: #e8e6e6;
+                color: #959797;
+                padding: 4px 8px;
+                border-radius: 8px;
+            }
+
+            li {
+                width: auto;
+                height: auto;
+                list-style: none;
+                font-size: 14px;
+                margin-top: 8px;
+                padding-left: 8px;
+                color: #959797;
+            }
         }
-
-        li {
-            width: auto;
-            height: auto;
-            list-style: none;
-            font-size: 14px;
-            margin-top: 8px;
-            padding-left: 8px;
-            color: #959797;
-        }
-
     }
 
     .kiji {
@@ -234,6 +238,7 @@ li select:hover {
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin: 20px 0;
         }
 
         .icon {
@@ -253,6 +258,7 @@ li select:hover {
 .store_three {
     width: 70%;
     height: auto;
+    margin: 20px 0;
 }
 
 .store_front {
