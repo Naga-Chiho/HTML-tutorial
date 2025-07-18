@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="これはChocoZAPのLPを作るチュートリアルです">
+    <meta name="viewport" content="width=device-width">
     <title>ChocoZAP-LP-Tutorial</title>
     <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
     <link rel="stylesheet" href="style.css">
@@ -11,10 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header>
-        <img src="./../images/logo.png" alt="logo" class="logo" />
+        <img src="../../images/logo.png" alt="logo" class="logo" />
         <nav>
             <ul>
                 <li><a href="#">店舗検索</a></li>
@@ -45,6 +45,7 @@
                 </li>
             </ul>
         </nav>
+        <div class="hunberger">≡</div>
     </header>
     <main>
         <section class="service">
@@ -57,82 +58,57 @@
                 <p>※トレーニングマシン・デスクバイク・ピラティス・ワークスペース以外のご利用にはアプリからのご予約が必要です。</p>
                 <p>※1枠20分〜 (各サービスの中から最大4枠/1日) ご予約可能です。メンテナンス時間によりご利用いただけない時間帯がございます。</p>
             </div>
-            <table>
-                <tr>
-                    <td class="service-box">
-                        <img src="/images/service1.png" alt="service1" />
-                        <a href="#" class="service-box-button">トレーニングマシン ></a>
-                    </td>
-                    <td class="service-box">
-                        <img src="/images/service2.png" alt="service2" />
-                        <a href="#" class="service-box-button">スターターキット ></a>
-                    </td>
-                    <td class="service-box">
-                        <img src="/images/service3.png" alt="service3" />
-                        <a href="#" class="service-box-button">セルフエステ ></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="service-box">
-                        <img src="/images/servise4.png" alt="service4" />
-                        <a href="#" class="service-box-button">セルフ脱毛 ></a>
-                    </td>
-                    <td class="service-box">
-                        <img src="/images/servise5.png" alt="service5" />
-                        <a href="#" class="service-box-button">セルフホワイトニング ></a>
-                    </td>
-                    <td class="service-box">
-                        <img src="/images/servise6.png" alt="service6" />
-                        <a href="#" class="service-box-button">セルフネイル ></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="service-box">
-                        <img src="/images/servise7.png" alt="service7" />
-                        <a href="#" class="service-box-button">マッサージチェア ></a>
-                    </td>
-                    <td class="service-box">
-                        <img src="/images/servise8.png" alt="service8" />
-                        <a href="#" class="service-box-button">デスクバイク ></a>
-                    </td>
-                    <td class="service-box">
-                        <img src="/images/servise9.png" alt="service9" />
-                        <a href="#" class="service-box-button">アプリ ></a>
-                    </td>
-                </tr>
-            </table>
+            <div class="container">
+                <div class="item">
+                    <img src="./img/service1.png" />
+                </div>
+                <div class="item">
+                    <img src="./img/service2.png" />
+                </div>
+                <div class="item">
+                    <img src="./img/serivce3.png" />
+                </div>
+                <div class="item">
+                    <img src="./img/service4.png" />
+                </div>
+                <div class="item">
+                    <img src="./img/service5.png" />
+                </div>
+                <div class="item">
+                    <img src="./img/service6.png" />
+                </div>
+                <div class="item">
+                    <img src="./img/service7.png" />
+                </div>
+                <div class="item">
+                    <img src="./img/service8.png" />
+                </div>
+                <div class="item">
+                    <img src="./img/service9.png" />
+                </div>
+            </div>
             <strong>▼一部店舗限定▼</strong>
             <p>詳しくは店舗ページでご確認ください。</p>
-            <table>
-                <tr>
-                    <td class="service-box">
-                        <img src="/images/servise10.png" alt="service10" />
-                        <a href="#" class="service-box-button">カラオケ ></a>
-                    </td>
-                    <td class="service-box">
-                        <img src="/images/servise11.png" alt="service11" />
-                        <a href="#" class="service-box-button">ランドリー ></a>
-                    </td>
-                    <td class="service-box">
-                        <img src="/images/servise12.png" alt="service12" />
-                        <a href="#" class="service-box-button">ピラティス ></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="service-box">
-                        <img src="/images/servise13.png" alt="service13" />
-                        <a href="#" class="service-box-button">カラオケ ></a>
-                    </td>
-                    <td class="service-box">
-                        <img src="/images/servise14.png" alt="service14" />
-                        <a href="#" class="service-box-button">ワークスペース ></a>
-                    </td>
-                    <td class="service-box-none">
-                        <img src="/images/servise14.png" alt="service14" />
-                        <a href="#" class="service-box-button">ランドリー ></a>
-                    </td>
-                </tr>
-            </table>
+            <div class="container">
+                <div class="item">
+                    <img src="./img/service10.png" />
+                </div>
+                <div class="item">
+                    <img src="./img/service11.png" />
+                </div>
+                <div class="item">
+                    <img src="./img/service12.png" />
+                </div>
+                <div class="item">
+                    <img src="./img/service13.png" />
+                </div>
+                <div class="item">
+                    <img src="./img/service14.png" />
+                </div>
+                <div class="item">
+                    <img src="./img/service14.png" />
+                </div>
+            </div>
             <a href="../index.html" class="home">ホームに戻る</a>
         </section>
     </main>
