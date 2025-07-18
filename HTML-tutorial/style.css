@@ -52,13 +52,13 @@ header {
         margin-left: 12px;
     }
 
-    li a::after { 
+    li a::after {
         background-color: #fff580;
         position: absolute;
         content: "";
         height: 2px;
         left: 0;
-        bottom: -4px; 
+        bottom: -4px;
         left: 4px;
         opacity: 0;
         transition: all .3s;
@@ -674,8 +674,17 @@ input {
 }
 
 .voice .info {
-    margin-top:12px;
-    color:#122939;
+    margin-top: 12px;
+    color: #122939;
+    font-weight: 700;
+    text-decoration: none;
+    border: none;
+    background: none;
+}
+
+.service .info {
+    margin-top: 12px;
+    color: #122939;
     font-weight: 700;
     text-decoration: none;
     border: none;
@@ -683,6 +692,12 @@ input {
 }
 
 .voice .info:hover {
+    border: none;
+    background: none;
+    opacity: 0.8;
+}
+
+.service.info:hover {
     border: none;
     background: none;
     opacity: 0.8;
